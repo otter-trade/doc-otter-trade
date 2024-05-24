@@ -1,19 +1,24 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { defineUserConfig } from 'vuepress';
+import theme from './theme.js';
 
 export default defineUserConfig({
-  base: "/",
+  dest: 'dist',
+  host: '0.0.0.0',
+  port: 9452,
+  base: '/',
+  temp: '.vscode/.vp-temp',
+  cache: '.vscode/.vp-cache',
 
   locales: {
-    "/": {
-      lang: "en-US",
-      title: "Docs Demo",
-      description: "A docs demo for vuepress-theme-hope",
+    '/': {
+      lang: 'zh-CN',
+      title: '文档演示',
+      description: 'OtterTrade 的文档演示',
     },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
+    '/en/': {
+      lang: 'en-US',
+      title: 'Docs Demo',
+      description: 'A docs demo for OtterTrade',
     },
   },
 
