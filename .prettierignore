@@ -1,0 +1,12 @@
+*.net
+.routify
+draft
+pnpm-lock.yaml
+node_modules
+dist
+.DS_Store
+.cache
+.temp
+.vp-cache
+.vp-temp
+.sum
