@@ -7,6 +7,7 @@ function GitSet {
   git config --global core.fileMode false
   git config core.filemode false
   git config pull.rebase false
+  git config --global init.defaultBranch main
   chmod -R 777 ./
 }
 
