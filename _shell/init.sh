@@ -17,12 +17,12 @@ NowPath=$(pwd)
 OutPutPath="${NowPath}/dist"
 
 # 远程仓库目录地址
-DeployPath="git@github.com:mo7Web/Mo7BlogPackage.git" # 待定
+DeployPath="git@github.com:otter-trade/doc-otter-trade-package.git" # 待定
 
 # Deploy 完成之后的输出  待定
 DeployEndText="
-https://github.com/mo7Web/Mo7BlogPackage
-https://blog.mo7.cc
+请查看
+https://github.com/otter-trade/doc-otter-trade-package
 "
 
 echo "
