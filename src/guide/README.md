@@ -1,4 +1,5 @@
 ---
+icon: book
 index: false
 
 category:

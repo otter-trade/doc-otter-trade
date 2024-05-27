@@ -1,4 +1,5 @@
 ---
+icon: info
 index: false
 
 category:

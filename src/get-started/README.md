@@ -1,4 +1,5 @@
 ---
+icon: slides
 index: false
 
 category:
