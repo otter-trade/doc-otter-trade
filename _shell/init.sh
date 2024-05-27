@@ -18,14 +18,15 @@ NowPath=$(pwd)
 OutPutPath="${NowPath}/dist"
 
 # 远程仓库目录地址
-DeployPath="git@github.com:otter-trade/doc-otter-trade-package.git" # 待定
+DeployPath="git@github.com:otter-trade/otter-trade.github.io.git" # 待定
 
 # Deploy 完成之后的输出  待定
 DeployEndText="
 请查看:
-https://github.com/otter-trade/doc-otter-trade-package
+https://github.com/otter-trade/otter-trade.github.io
 https://doc.ottertrade.com
 https://ot-doc.mo7.cc
+https://otter-trade.github.io
 "
 
 echo "
