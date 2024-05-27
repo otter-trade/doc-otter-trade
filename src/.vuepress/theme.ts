@@ -20,8 +20,8 @@ export default hopeTheme({
 
   navbarLayout: {
     start: ['Brand'],
-    center: ['Search'],
-    end: ['Links', 'Language', 'Repo', 'Outlook'],
+    center: ['Links'],
+    end: ['Language', 'Outlook', 'Search'],
   },
   sidebarSorter: ['order', 'readme', 'title', 'filename'],
   pageInfo: [
