@@ -13,17 +13,15 @@ const textConsole = `
 
 const PrintlnInfo = () => {
   const PackageData: any = AppPackage;
-  console.info(textConsole + PackageData.version);
+  const Text = `${textConsole}${PackageData.version}`;
+  console.info(Text);
+  return Text;
 };
-
-onMounted(() => {
-  PrintlnInfo();
-});
 </script>
 
 <template>
   <ClientOnly>
-    <div class="none">版本打印</div>
+    <div class="none">{{ PrintlnInfo() }}</div>
   </ClientOnly>
 </template>
 

@@ -41,4 +41,88 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     highlights:
       - title: 策略共鉴，智识流转
+
+  - header: 这里是用户站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    highlights:
+      - title: 让金钱为你打工
+
+  - header: 这里是开发者站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+    highlights:
+      - title: 创世需要七天，你的想法到实盘仅需N步。
+
+  - header: 这里是BBS
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    highlights:
+      - title: 策略共鉴，智识流转
+
+  - header: 这里是用户站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    highlights:
+      - title: 让金钱为你打工
+
+  - header: 这里是开发者站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+    highlights:
+      - title: 创世需要七天，你的想法到实盘仅需N步。
+
+  - header: 这里是BBS
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    highlights:
+      - title: 策略共鉴，智识流转
+
+  - header: 这里是用户站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    highlights:
+      - title: 让金钱为你打工
+
+  - header: 这里是开发者站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+    highlights:
+      - title: 创世需要七天，你的想法到实盘仅需N步。
+
+  - header: 这里是BBS
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    highlights:
+      - title: 策略共鉴，智识流转
+
+  - header: 这里是用户站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    highlights:
+      - title: 让金钱为你打工
+
+  - header: 这里是开发者站
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+    highlights:
+      - title: 创世需要七天，你的想法到实盘仅需N步。
+
+  - header: 这里是BBS
+    image: /pwa/512x512.png
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    highlights:
+      - title: 策略共鉴，智识流转
 ---

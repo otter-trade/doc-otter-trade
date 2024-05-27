@@ -16,7 +16,7 @@ export default hopeTheme({
   hotReload: true,
   favicon: '/favicon.ico',
 
-  fullscreen: true,
+  // fullscreen: true,
 
   navbarLayout: {
     start: ['Brand'],
