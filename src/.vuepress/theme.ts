@@ -5,6 +5,7 @@ import { enSidebar, zhSidebar } from './sidebar/index.js';
 export default hopeTheme({
   hostname: 'https://doc.OtterTrade.com',
   repo: 'https://github.com/otter-trade/doc-otter-trade',
+
   author: {
     name: 'OtterTrade',
     url: 'https://OtterTrade.com',
@@ -12,7 +13,6 @@ export default hopeTheme({
   navbarTitle: 'OtterTrade',
   navbarAutoHide: 'always',
 
-  // enable it to preview all changes in time
   hotReload: true,
   favicon: '/pwa/favicon.ico',
 
@@ -65,22 +65,12 @@ export default hopeTheme({
     },
   },
 
-  encrypt: {
-    config: {
-      '/demo/encrypt.html': ['1234'],
-      '/en/demo/encrypt.html': ['1234'],
-    },
-  },
-
   plugins: {
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
     comment: {
-      provider: 'Giscus',
-      repo: 'vuepress-theme-hope/giscus-discussions',
-      repoId: 'R_kgDOG_Pt2A',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDOG_Pt2M4COD69',
+      provider: 'Waline',
+      serverURL: 'https://talk.mo7.cc',
+      copyright: false,
+      reaction: true,
     },
 
     components: {
@@ -119,6 +109,10 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
+      alert: true,
+      footnote: true,
+      imgMark: true,
+      obsidianImgSize: true,
 
       // Install chart.js before enabling it
       // chart: true,
