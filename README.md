@@ -16,7 +16,28 @@ https://doc.ottertrade.com
 
 https://ot-doc.mo7.cc
 
-## 使用方法
+## 博客框架
+
+https://v2.vuepress.vuejs.org/
+
+基于 [VuePress Theme Hope](https://theme-hope.vuejs.press) 搭建
+
+## 评论服务
+
+文档\
+https://waline.js.org
+
+服务地址\
+https://talk.mo7.cc
+
+管理后台(Github 登录)
+https://talk.mo7.cc/ui
+
+## 图标
+
+https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.22&manage_type=myprojects&projectId=3855310
+
+## 运行
 
 运行环境:
 

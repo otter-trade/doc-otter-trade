@@ -268,9 +268,6 @@ highlights:
         icon: mobile-screen
         details: 让你的网站更像一个 APP
         link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
-
-copyright: false
-footer: Copyright © 2024 OtterTrade
 ---
 
 这是项目主页的案例。你可以在这里放置你的主体内容。
