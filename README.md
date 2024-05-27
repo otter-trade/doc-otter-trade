@@ -33,9 +33,9 @@ https://talk.mo7.cc
 管理后台(Github 登录)
 https://talk.mo7.cc/ui
 
-## 图标
+## 图标库 ot-doc
 
-https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.22&manage_type=myprojects&projectId=3855310
+https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.22&manage_type=myprojects&projectId=4563845
 
 ## 运行
 
