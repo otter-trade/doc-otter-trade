@@ -12,8 +12,8 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '文档演示',
-      description: 'OtterTrade 的文档演示',
+      title: 'OtterTrade',
+      description: 'OtterTrade 文档站',
     },
     '/en/': {
       lang: 'en-US',

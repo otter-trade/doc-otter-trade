@@ -4,52 +4,61 @@ import { enSidebar, zhSidebar } from './sidebar/index.js';
 
 export default hopeTheme({
   hostname: 'https://doc.OtterTrade.com',
-
+  repo: 'https://github.com/otter-trade/doc-otter-trade',
   author: {
-    name: 'Mr.Hope',
-    url: 'https://mister-hope.com',
+    name: 'OtterTrade',
+    url: 'https://OtterTrade.com',
   },
+  navbarTitle: 'OtterTrade',
+  navbarAutoHide: 'always',
+
+  // enable it to preview all changes in time
+  hotReload: true,
+  favicon: '/pwa/favicon.ico',
+
+  navbarLayout: {
+    start: ['Brand'],
+    center: ['Search'],
+    end: ['Links', 'Language', 'Repo'],
+  },
+  sidebarSorter: ['order', 'readme', 'title', 'filename'],
+  pageInfo: [
+    'Author',
+    'Category',
+    'Date',
+    'Original',
+    'Tag',
+    'ReadingTime',
+    'Word',
+    'PageView',
+    //..
+  ],
 
   iconAssets: 'fontawesome-with-brands',
 
-  logo: 'https://theme-hope-assets.vuejs.press/logo.svg',
-
-  repo: 'otter-trade/doc-otter-trade',
+  logo: '/pwa/logo.png',
 
   docsDir: 'src',
+
+  displayFooter: true,
 
   locales: {
     '/': {
       // navbar
       navbar: zhNavbar,
-
       // sidebar
       sidebar: zhSidebar,
-
-      footer: '默认页脚',
-
-      displayFooter: true,
-
       // page meta
       metaLocales: {
         editLink: '在 GitHub 上编辑此页',
       },
     },
 
-    /**
-     * Chinese locale config
-     */
     '/en/': {
       // navbar
       navbar: enNavbar,
-
       // sidebar
       sidebar: enSidebar,
-
-      footer: 'Default footer',
-
-      displayFooter: true,
-
       metaLocales: {
         editLink: 'Edit this page on GitHub',
       },
