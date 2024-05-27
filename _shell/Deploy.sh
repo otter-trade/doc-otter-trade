@@ -18,13 +18,14 @@ echo "git commit: ${desc}"
 ## 清理目录 dist 和 git 仓库
 rm -rf "${OutPutPath}"
 
-## 开始编译
+## 开始编译 并向编译结果添加文件
 pnpm run build &&
-  cp "${NowPath}/package.json" "${OutPutPath}"
+  cp "${NowPath}/package.json" "${OutPutPath}" &&
+  cp "${NowPath}/README.md" "${OutPutPath}"
 
 ###################################################
 
-# 开始进行发布步骤 OutPutPath -> 远程 DeployPath
+# 开始执行发布步骤 OutPutPath -> 远程 DeployPath
 cd "${OutPutPath}" || exit
 git init &&
   git add . &&
