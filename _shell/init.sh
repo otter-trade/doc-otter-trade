@@ -22,8 +22,10 @@ DeployPath="git@github.com:otter-trade/doc-otter-trade-package.git" # 待定
 
 # Deploy 完成之后的输出  待定
 DeployEndText="
-请查看
+请查看:
 https://github.com/otter-trade/doc-otter-trade-package
+https://doc.ottertrade.com
+https://ot-doc.mo7.cc
 "
 
 echo "

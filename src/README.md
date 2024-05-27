@@ -19,7 +19,7 @@ actions:
     link: ./guide/
 
 highlights:
-  - header: 易于安装
+  - header: 这里是用户站
     image: /assets/image/box.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
