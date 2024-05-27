@@ -36,7 +36,7 @@ export default hopeTheme({
     //..
   ],
 
-  iconAssets: '//at.alicdn.com/t/c/font_4563845_e79fvmemvu7.css',
+  iconAssets: '//at.alicdn.com/t/c/font_4563845_yja7tn7hzg8.css',
 
   logo: '/pwa/logo.png',
 

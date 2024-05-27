@@ -7,12 +7,13 @@ export const zhNavbar = navbar([
   '/about/',
   {
     text: '快速访问',
-    icon: 'yumingwangzhan',
+    icon: 'link',
     children: [
+      '/posts/',
       { text: 'Github', icon: 'github', link: 'https://github.com/otter-trade' },
-      { text: '用户站', icon: 'zhanzhang', link: 'https://OtterTrade.com' },
+      { text: '用户站', icon: 'user', link: 'https://OtterTrade.com' },
       { text: '开发者站', icon: 'coding', link: 'https://OtterTrade.com/developer' },
-      { text: 'BBS', icon: 'other', link: 'https://OtterTrade.com/bbs' },
+      { text: 'BBS', icon: 'bbs', link: 'https://OtterTrade.com/bbs' },
     ],
   },
 ]);

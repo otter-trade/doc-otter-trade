@@ -1,11 +1,11 @@
 ---
-icon: coding
+icon: api
 index: false
 
 category:
   - OpenApi
 tag:
-  - OpenApi
+  - 目录
 
 permalink: /open-api/
 ---

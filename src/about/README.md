@@ -5,7 +5,7 @@ index: false
 category:
   - 关于
 tag:
-  - 关于
+  - 目录
 
 permalink: /about/
 ---

@@ -1,9 +1,9 @@
 import { sidebar } from 'vuepress-theme-hope';
 
 const back_posts = {
-  text: '返回文档首页',
-  icon: 'home',
-  link: '/',
+  text: '返回总目录',
+  icon: 'sort',
+  link: '/posts/',
 };
 
 export const zhSidebar = sidebar({
@@ -22,7 +22,7 @@ export const zhSidebar = sidebar({
     back_posts,
     {
       text: '快速上手',
-      icon: 'slides',
+      icon: 'guide1',
       link: '/get-started/',
       children: 'structure',
     },
@@ -32,7 +32,7 @@ export const zhSidebar = sidebar({
     back_posts,
     {
       text: '操作指南',
-      icon: 'book',
+      icon: 'guide2',
       link: '/guide/',
       children: 'structure',
     },
@@ -42,11 +42,11 @@ export const zhSidebar = sidebar({
     back_posts,
     {
       text: 'OpenApi',
-      icon: 'coding',
+      icon: 'api',
       link: '/open-api/',
       children: 'structure',
     },
   ],
 
-  '/': ['README.md', '/get-started/', '/guide/', '/open-api/', '/about/'],
+  '/posts/': ['/', '/posts/', '/get-started/', '/guide/', '/open-api/', '/about/'],
 });

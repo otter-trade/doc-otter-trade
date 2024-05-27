@@ -1,11 +1,11 @@
 ---
-icon: slides
+icon: guide1
 index: false
 
 category:
   - 快速上手
 tag:
-  - 教程
+  - 目录
 
 permalink: /get-started/
 ---

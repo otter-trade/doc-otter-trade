@@ -10,13 +10,16 @@ bgImageStyle:
 heroText: OtterTrade
 tagline: 智策即用，通达市场——OtterTrade，策略连接你我
 actions:
-  - text: 使用指南
-    icon: lightbulb
-    link: ./demo/
+  - text: 快速上手
+    icon: slides
+    link: /get-started/
     type: primary
 
-  - text: 文档
-    link: ./guide/
+  - text: 关于我们
+    icon: info
+    link: /get-started/
+    type: default
+
 highlights:
   - header: 这里是用户站
     image: /pwa/512x512.png

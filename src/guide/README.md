@@ -1,11 +1,11 @@
 ---
-icon: book
+icon: guide2
 index: false
 
 category:
   - 操作指南
 tag:
-  - 指南
+  - 目录
 
 permalink: /guide/
 ---
