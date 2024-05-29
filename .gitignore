@@ -6,4 +6,3 @@ dist
 .vp-cache
 .vp-temp
 .sum
-pnpm-lock.yaml
