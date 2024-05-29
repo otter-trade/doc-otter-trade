@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router';
 import { mStorage } from '../utils/tools.js';
 
 const ShowComments = () => {
-  const CommentElm = document.querySelector('.waline-wrapper') as HTMLElement;
+  const CommentElm = document.getElementById('vp-comment') as HTMLElement;
   if (!CommentElm) {
     return;
   }
@@ -13,7 +13,7 @@ const ShowComments = () => {
   mStorage.set('CommentIsDisplay', true);
 };
 const HideComments = () => {
-  const CommentElm = document.querySelector('.waline-wrapper') as HTMLElement;
+  const CommentElm = document.getElementById('vp-comment') as HTMLElement;
   if (!CommentElm) {
     return;
   }
@@ -23,7 +23,7 @@ const HideComments = () => {
 };
 
 const ReadeCommentIsDisplay = () => {
-  const CommentElm = document.querySelector('.waline-wrapper') as HTMLElement;
+  const CommentElm = document.getElementById('vp-comment') as HTMLElement;
   if (!CommentElm) {
     return;
   }
@@ -39,22 +39,26 @@ const ReadeCommentIsDisplay = () => {
 };
 
 const CreateCommentBtn = () => {
-  const CommentElm = document.querySelector('.waline-wrapper');
+  const CommentElm = document.getElementById('vp-comment');
   if (!CommentElm) {
     return;
   }
 
   if (!document.getElementById('ShowComment')) {
-    const showBtn = document.createElement('button');
-    showBtn.id = 'ShowComment';
-    showBtn.innerHTML = '显示评论区';
-    CommentElm.appendChild(showBtn);
+    const BtnElm = document.createElement('button');
+    BtnElm.id = 'ShowComment';
+    BtnElm.classList.add('primary');
+    BtnElm.classList.add('wl-btn');
+    BtnElm.innerHTML = '显示评论区';
+    CommentElm.appendChild(BtnElm);
   }
   if (!document.getElementById('HideComment')) {
-    const showBtn = document.createElement('button');
-    showBtn.id = 'HideComment';
-    showBtn.innerHTML = '隐藏评论区';
-    CommentElm.appendChild(showBtn);
+    const BtnElm = document.createElement('button');
+    BtnElm.id = 'HideComment';
+    BtnElm.classList.add('primary');
+    BtnElm.classList.add('wl-btn');
+    BtnElm.innerHTML = '隐藏评论区';
+    CommentElm.appendChild(BtnElm);
   }
 
   const showBtn = document.getElementById('ShowComment');
@@ -151,12 +155,6 @@ onMounted(() => {
   width: 8em;
   z-index: 5;
   user-select: none;
-  cursor: pointer;
-  background: var(--theme-color);
-  color: rgba($color: #fff, $alpha: 0.9);
-  border: 0;
-  border-radius: 0.3em;
-  padding: 0.3em 0.9em;
   transition: 0.3s;
   font-size: 0.9rem;
 }
