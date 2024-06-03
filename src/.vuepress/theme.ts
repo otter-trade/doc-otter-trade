@@ -12,6 +12,7 @@ export default hopeTheme({
   },
   navbarTitle: 'OtterTrade',
   navbarAutoHide: 'always',
+  darkmode: 'disable',
 
   hotReload: true,
   favicon: '/favicon.ico',

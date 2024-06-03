@@ -7,9 +7,12 @@ const PrintVersion = defineAsyncComponent(() => import('./components/PrintVersio
 const TopNavBeautify = defineAsyncComponent(() => import('./components/TopNavBeautify.vue'));
 const CommentHideBtn = defineAsyncComponent(() => import('./components/CommentHideBtn.vue'));
 const WeixinSteerBrowser = defineAsyncComponent(() => import('./components/WeixinSteerBrowser.vue'));
+const HomePage = defineAsyncComponent(() => import('./components/HomePage.vue'));
 
 export default defineClientConfig({
-  enhance({ app, router, siteData }) {},
+  enhance({ app, router, siteData }) {
+    app.component('HomePage', HomePage);
+  },
   setup() {
     onMounted(() => {});
   },
