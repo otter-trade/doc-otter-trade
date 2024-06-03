@@ -1,13 +1,21 @@
 #!/bin/bash
 
-## 环境变量
-function GitSet {
-  echo " ====== git设置大小写敏感,文件权限变更 ====== "
+## git 设置初始化
+function GitConfigInit() {
+  echo " 已覆盖 Git 设置 "
+  # 设置大小写敏感
   git config core.ignorecase false
-  git config --global core.fileMode false
+  # 忽略文件权限的变更
   git config core.filemode false
+  # 禁用 pull.rebase
   git config pull.rebase false
+  # 提交时转换为 LF，检出时不转换
+  git config --global core.autocrlf input
+  # 提交包含混合换行符的文件时，发出警告
+  git config --global core.safecrlf warn
+  # init 默认分支设置为 main
   git config --global init.defaultBranch main
+  # 修改文件权限为开放
   chmod -R 777 ./
 }
 
@@ -17,7 +25,7 @@ NowPath=$(pwd)
 # 最终的输出目录
 OutPutPath="${NowPath}/dist"
 
-# 远程仓库目录地址
+# 需要发布的远程仓库目录地址
 DeployPath="git@github.com:otter-trade/otter-trade.github.io.git" # 待定
 
 # Deploy 完成之后的输出  待定
