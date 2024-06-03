@@ -3,6 +3,8 @@
 ## 设置并加载变量
 source "./_shell/init.sh"
 
+GitConfigInit
+
 ## 判断参数
 desc=$1
 if [ -z "${desc}" ]; then
@@ -11,13 +13,11 @@ if [ -z "${desc}" ]; then
 fi
 echo "git commit: ${desc}"
 
-GitSet
-
 git pull &&
   git add . &&
   git commit -m "${desc}" &&
   git push &&
   echo "同步完成"
 
-GitSet &&
+GitConfigInit &&
   exit 0
