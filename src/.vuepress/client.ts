@@ -6,7 +6,7 @@ import 'vuepress-theme-hope/presets/bounce-icon.scss'; // 为页面图标添加�
 const PrintVersion = defineAsyncComponent(() => import('./components/PrintVersion.vue'));
 const TopNavBeautify = defineAsyncComponent(() => import('./components/TopNavBeautify.vue'));
 const CommentHideBtn = defineAsyncComponent(() => import('./components/CommentHideBtn.vue'));
-// const WeixinSteerBrowser = defineAsyncComponent(() => import('./components/WeixinSteerBrowser.vue'));
+const WeixinSteerBrowser = defineAsyncComponent(() => import('./components/WeixinSteerBrowser.vue'));
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {},
@@ -17,7 +17,7 @@ export default defineClientConfig({
     PrintVersion,
     TopNavBeautify,
     CommentHideBtn,
-    // WeixinSteerBrowser,
+    WeixinSteerBrowser,
     // ...
   ],
 });

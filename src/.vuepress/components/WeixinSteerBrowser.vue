@@ -2,6 +2,7 @@
 import { onMounted, nextTick, ref } from 'vue';
 
 let isShow = ref(false);
+let deviceName = ref('');
 
 function UADevice() {
   var ua = window.navigator.userAgent.toLowerCase();
@@ -13,9 +14,14 @@ function UADevice() {
 
 function Start() {
   const device = UADevice();
-  if (!device.isWeixin) {
+  if (device.isWeixin) {
     isShow.value = true;
+    deviceName.value = '微信';
   }
+}
+
+function CloseFunc() {
+  isShow.value = false;
 }
 
 onMounted(() => {
@@ -28,7 +34,11 @@ onMounted(() => {
 <template>
   <ClientOnly>
     <div v-if="isShow" class="SteerWeixin">
-      <div class="guide-banner-subtitle">
+      <div class="title">
+        {{ deviceName }}内浏览可能会出现一些问题。
+        <div class="closeBtn" @click="CloseFunc">关闭提示</div>
+      </div>
+      <div class="subtitle">
         点击右上角<img
           class="more"
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAASZJREFUSA3NlbEOgjAQhm2dXGTr6CIxPIE+hI9gmHgNTXgCNyffgcHBwZnNkPgAjO4kDg5AwDtCk0JabjGULtfeHX++XsuVzdrhed6mKIpjXdc7cAnG2Ats5Pv+JQzDSuZRdmwdhkCu6x6qqrrCdKEBjDnn+zRNP5pYx2VDZ44VK8vyboBHwBWcisiy7Nah7S1s6fA8z0/Aoqu8ihhAddeqoz+3pcMBZNuH0a3hilF5VLyR/bcObkDogDU+Ko+KS0kqj4p3dHjbbaTTaOFHxq5kHLZ08AQiI1UbALi34zhPIs+KDsc+D2DxEBxsIEiS5DuUY0tHvgNL+LnOABiokFh5hIc34KH6TXPoVKPrNBuQQNgq2y4h8M7jtaEqL79V7dR0VLbJzX/zgNA61qfhpwAAAABJRU5ErkJggg=="
@@ -52,6 +62,47 @@ onMounted(() => {
   left: 0;
   top: 0;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0.4rem 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  .title {
+    color: #000;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+  .subtitle {
+    color: #666;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+  .more {
+    height: 0.3rem;
+    margin: 0 0.3rem;
+  }
+  .safari {
+    height: 1.6rem;
+    margin: 0 0.3rem;
+  }
+  .arrow {
+    position: absolute;
+    right: 1.4rem;
+    top: 1rem;
+    height: 2.2rem;
+  }
+  .closeBtn {
+    cursor: pointer;
+    color: #fff;
+    background-color: #ffa217;
+    border-color: aqua;
+    font-size: 0.66rem;
+    padding: 0.2rem 0.4rem;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+  }
 }
 </style>
