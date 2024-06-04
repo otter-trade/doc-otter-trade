@@ -37,6 +37,6 @@
 <style lang="scss" scoped>
 .mo7-home-page-bbs {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #38ad5e;
-  border: 6px solid #38ad5e;
+  border: 0.375rem solid #38ad5e;
 }
 </style>

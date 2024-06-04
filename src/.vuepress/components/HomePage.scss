@@ -99,10 +99,10 @@
   }
   .mo7-home-page-block {
     box-sizing: border-box;
-    border-radius: 32px;
-    margin: 32px auto;
+    border-radius: 2rem;
+    margin: 2rem auto;
     text-align: center;
-    padding: 32px 0;
+    padding: 2rem 0;
 
     &::after {
       content: '';
@@ -123,14 +123,14 @@
     .info {
       text-align: center;
       .title {
-        font-size: 37px;
+        font-size: 2.3125rem;
         font-weight: 600;
-        line-height: 52px;
+        line-height: 3.25rem;
       }
       .desc {
-        font-size: 17px;
+        font-size: 1.0625rem;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.5rem;
       }
       .btnBlock {
         .mo7-home-btn-quick {
@@ -150,7 +150,7 @@
 
     .cover {
       max-width: 100%;
-      width: 400px;
+      width: 25rem;
       position: relative;
       margin: 0 auto;
       .coverImg {
