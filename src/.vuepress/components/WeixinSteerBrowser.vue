@@ -2,6 +2,7 @@
 import { onMounted, nextTick, ref } from 'vue';
 
 let isShow = ref(false);
+let showAnimate = ref(true);
 let deviceName = ref('');
 
 function UADevice() {
@@ -14,26 +15,35 @@ function UADevice() {
 
 function Start() {
   const device = UADevice();
-  if (device.isWeixin) {
+  if (!device.isWeixin) {
     isShow.value = true;
+    showAnimate.value = false;
+    setTimeout(() => {
+      showAnimate.value = true;
+    }, 1000);
     deviceName.value = '微信';
   }
 }
 
 function CloseFunc() {
-  isShow.value = false;
+  showAnimate.value = false;
+  setTimeout(() => {
+    isShow.value = false;
+  }, 1000);
 }
 
 onMounted(() => {
   nextTick(() => {
-    Start();
+    setTimeout(() => {
+      Start();
+    }, 1000);
   });
 });
 </script>
 
 <template>
   <ClientOnly>
-    <div v-if="isShow" class="SteerWeixin">
+    <div v-if="isShow" class="SteerWeixin" :class="{ show: showAnimate, hide: !showAnimate }">
       <div class="title">
         {{ deviceName }}内浏览可能会出现一些问题。
         <div class="closeBtn" @click="CloseFunc">关闭提示</div>
@@ -66,6 +76,15 @@ onMounted(() => {
   box-sizing: border-box;
   padding: 0.4rem 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: 0.7s;
+  &.show {
+    top: 0;
+    opacity: 1;
+  }
+  &.hide {
+    top: -70px;
+    opacity: 0;
+  }
   .title {
     color: #000;
     font-weight: bolder;
