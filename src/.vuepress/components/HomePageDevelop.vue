@@ -1,3 +1,4 @@
+<script setup lang="ts"></script>
 <template>
   <div class="mo7-home-page-block mo7-home-page-develop">
     <div class="right">
