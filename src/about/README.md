@@ -10,7 +10,7 @@ tag:
 permalink: /about/
 ---
 
-# 关于
+# 关于我们
 
 ::: info 关于我们
 
