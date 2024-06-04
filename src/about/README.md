@@ -12,7 +12,7 @@ permalink: /about/
 
 # 关于
 
-::: info 关于
+::: info 关于我们
 
 :::
 
