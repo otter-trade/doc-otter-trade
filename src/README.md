@@ -27,6 +27,7 @@ actions:
 <HomePageBBS />
 
 <script setup>
+import "@components/HomePageBanner.scss";
 import HomePageUser from "@components/HomePageUser.vue";
 import HomePageDevelop from "@components/HomePageDevelop.vue";
 import HomePageBBS from "@components/HomePageBBS.vue";
