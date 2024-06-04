@@ -26,7 +26,7 @@ NowPath=$(pwd)
 OutPutPath="${NowPath}/dist"
 
 # 需要发布的远程仓库目录地址
-DeployPath="git@github.com:otter-trade/otter-trade.github.io.git" # 待定
+GitRemotePackagePath="git@github.com:otter-trade/otter-trade.github.io.git" # 待定
 
 # Deploy 完成之后的输出  待定
 DeployEndText="
@@ -42,7 +42,7 @@ echo "
 
 当前目录: ${NowPath}
 输出目录: ${OutPutPath}
-远程仓库目录: ${DeployPath}
-完成之后的输出: ${DeployEndText}
+远程仓库目录: ${GitRemotePackagePath}
+请查看: ${DeployEndText}
 
 "
