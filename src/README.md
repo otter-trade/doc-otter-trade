@@ -2,9 +2,24 @@
 home: true
 icon: home
 title: 文档首页
-heroImage: /pwa/512x512.png
-heroText: OtterTrade.com
-tagline: 智策即用，通达市场——OtterTrade，策略连接你我
+heroImage: /img/home_1_logo.png
+heroText: 智策即用，通达市场
+tagline: OtterTrade，策略连接你我
+actions:
+  - text: 快速上手
+    icon: guide1
+    link: /get-started/
+    type: primary
+
+  - text: 关于我们
+    icon: info
+    link: /about/
+    type: default
+
+  - text: OtterTrade.com
+    icon: /img/link_text.png
+    link: https://OtterTrade.com
+    type: default
 ---
 
 <HomePage />

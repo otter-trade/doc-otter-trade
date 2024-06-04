@@ -25,14 +25,8 @@ const text = ref('OtterTrade.com');
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .mo7-home-page {
   background-color: red;
 }
-
-// .theme-container {
-//   .vp-hero-info-wrapper {
-//     display: none;
-//   }
-// }
 </style>
