@@ -3,20 +3,20 @@
     <div class="left">
       <div class="info">
         <div class="title">用户站</div>
-        <div class="desc">“基于大数据和人工智能的个性化交易操作平台”</div>
+        <div class="desc">“让金钱为你打工。”</div>
         <div class="btnBlock">
           <a
             class="route-link auto-link vp-hero-action default no-external-link-icon mo7-home-btn-quick"
             aria-label="快速上手"
-            href="https://OtterTrade.com"
-            target="_blank"
+            href="/get-started/"
           >
             <span class="font-icon icon iconfont icon-guide1"></span>快速上手
           </a>
 
           <a
             class="route-link auto-link vp-hero-action primary no-external-link-icon mo7-home-btn-primary"
-            href="/about/"
+            href="https://test-www.OtterTrade.com/welcome"
+            target="_blank"
             aria-label="立即使用"
           >
             立即使用<span class="font-icon icon iconfont icon-xiangyou"></span>

@@ -14,7 +14,7 @@
       overflow: hidden;
       height: 23.125rem;
 
-      margin: 4rem;
+      margin: 2rem 4rem;
 
       .vp-hero-image {
         position: absolute;
@@ -126,11 +126,13 @@
         font-size: 2.3125rem;
         font-weight: 600;
         line-height: 3.25rem;
+        margin-bottom: 0.75rem;
       }
       .desc {
         font-size: 1.0625rem;
         font-weight: 500;
         line-height: 1.5rem;
+        margin-bottom: 1.125rem;
       }
       .btnBlock {
         .mo7-home-btn-quick {
@@ -142,7 +144,7 @@
         .mo7-home-btn-primary {
           border-radius: 0.5rem;
           background: #302f33;
-          color: #fff;
+          color: var(--theme-color-light);
           border: 0.125rem solid #302f33;
         }
       }
@@ -166,6 +168,9 @@
   .mo7-home-page {
     .theme-hope-content {
       padding: 0 1rem;
+    }
+    .mo7-home-page-block {
+      margin: 1rem auto;
     }
     .vp-hero-info-wrapper {
       .vp-hero-info {
@@ -202,6 +207,11 @@
       .right {
         width: 100%;
       }
+    }
+
+    .mo7-home-page-develop {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 }
