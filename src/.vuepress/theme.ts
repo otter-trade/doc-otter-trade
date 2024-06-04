@@ -3,9 +3,9 @@ import { enNavbar, zhNavbar } from './navbar/index.js';
 import { enSidebar, zhSidebar } from './sidebar/index.js';
 
 export default hopeTheme({
+  iconAssets: '//at.alicdn.com/t/c/font_4563845_1etsaa79eqc.css',
   hostname: 'https://doc.OtterTrade.com',
   repo: 'https://github.com/otter-trade/doc-otter-trade',
-
   author: {
     name: 'OtterTrade',
     url: 'https://OtterTrade.com',
@@ -36,8 +36,6 @@ export default hopeTheme({
     'PageView',
     //..
   ],
-
-  iconAssets: '//at.alicdn.com/t/c/font_4563845_yja7tn7hzg8.css',
 
   logo: '/pwa/logo.png',
 

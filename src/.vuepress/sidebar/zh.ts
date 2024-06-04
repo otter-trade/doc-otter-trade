@@ -32,7 +32,7 @@ export const zhSidebar = sidebar({
     back_posts,
     {
       text: '操作指南',
-      icon: 'guide2',
+      icon: 'zhinan',
       link: '/guide/',
       children: 'structure',
     },
@@ -42,7 +42,7 @@ export const zhSidebar = sidebar({
     back_posts,
     {
       text: 'OpenApi',
-      icon: 'api',
+      icon: 'apiguanli',
       link: '/open-api/',
       children: 'structure',
     },

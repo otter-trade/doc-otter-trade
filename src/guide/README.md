@@ -1,5 +1,5 @@
 ---
-icon: guide2
+icon: zhinan
 index: false
 
 category:
