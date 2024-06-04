@@ -1,5 +1,5 @@
-// 首页改造
-.theme-container {
+// 首页Banner改造
+.mo7-home-page {
   .vp-project-home {
     background-color: #f7f8fa;
   }
@@ -32,7 +32,7 @@
         top: 0;
         margin: 0;
         max-width: 100%;
-        min-width: 266px;
+        min-width: 16.625rem;
         box-sizing: border-box;
         padding: 3.25rem 4rem;
         .vp-hero-title {
@@ -63,13 +63,13 @@
           [aria-label='快速上手'] {
             border-radius: 0.5rem;
             color: #000;
-            border: 2px solid #ffcd05;
+            border: 0.125rem solid #ffcd05;
           }
           [aria-label='关于我们'] {
             border-radius: 0.5rem;
             color: #ffcd05;
             background: transparent;
-            border: 2px solid #ffcd05;
+            border: 0.125rem solid #ffcd05;
           }
           [aria-label='OtterTrade.com'] {
             position: absolute;
@@ -92,23 +92,96 @@
   }
 }
 
-@media (max-width: 879px) {
-  .theme-container {
+// 其余三个板块
+.mo7-home-page {
+  .theme-hope-content {
+    padding: 0 4rem;
+  }
+  .mo7-home-page-block {
+    box-sizing: border-box;
+    border-radius: 32px;
+    margin: 32px auto;
+    text-align: center;
+    padding: 32px 0;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .left,
+    .right {
+      width: 49%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .info {
+      text-align: center;
+      .title {
+        font-size: 37px;
+        font-weight: 600;
+        line-height: 52px;
+      }
+      .desc {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+      .btnBlock {
+        .mo7-home-btn-quick {
+          border-radius: 0.5rem;
+          color: #302f33;
+          background: transparent;
+          border: 0.125rem solid #302f33;
+        }
+        .mo7-home-btn-primary {
+          border-radius: 0.5rem;
+          background: #302f33;
+          color: #fff;
+          border: 0.125rem solid #302f33;
+        }
+      }
+    }
+
+    .cover {
+      max-width: 100%;
+      width: 400px;
+      position: relative;
+      margin: 0 auto;
+      .coverImg {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+// 响应式
+@media (max-width: 899px) {
+  .mo7-home-page {
+    .theme-hope-content {
+      padding: 0 1rem;
+    }
     .vp-hero-info-wrapper {
       .vp-hero-info {
-        margin: 16px;
+        margin: 1rem;
 
         .vp-hero-infos {
           padding: 2rem 2rem;
 
           .vp-hero-title {
-            font-size: 30px;
-            line-height: 42px;
+            font-size: 1.875rem;
+            line-height: 2.625rem;
           }
 
           #main-description {
-            font-size: 30px;
-            line-height: 42px;
+            font-size: 1.875rem;
+            line-height: 2.625rem;
           }
         }
       }
@@ -117,31 +190,38 @@
 }
 
 @media (max-width: 579px) {
-  .theme-container {
+  .mo7-home-page {
     .vp-hero-info-wrapper {
       .vp-hero-info {
-        height: 500px;
+        height: 31.25rem;
+      }
+    }
+
+    .mo7-home-page-block {
+      .left,
+      .right {
+        width: 100%;
       }
     }
   }
 }
 
 @media (max-width: 460px) {
-  .theme-container {
+  .mo7-home-page {
     .vp-hero-info-wrapper {
       .vp-hero-info {
-        height: 436px;
+        height: 27.25rem;
         .vp-hero-infos {
           position: relative;
           padding: 1.2rem 1rem;
           .vp-hero-title {
             text-align: center;
-            line-height: 30px;
-            font-size: 24px;
+            line-height: 1.875rem;
+            font-size: 1.5rem;
           }
           #main-description {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 1.5rem;
+            line-height: 1.875rem;
             text-align: center;
           }
           .vp-hero-actions {
@@ -149,7 +229,7 @@
             margin: 0.4rem 0;
             [aria-label='OtterTrade.com'] {
               left: 50%;
-              margin-left: -133px;
+              margin-left: -8.3125rem;
               bottom: -2.4rem;
               .icon {
                 height: 2rem;

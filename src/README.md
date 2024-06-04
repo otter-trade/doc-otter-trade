@@ -20,6 +20,8 @@ actions:
     icon: /img/link_text.png
     link: https://OtterTrade.com
     type: default
+
+containerClass: mo7-home-page
 ---
 
 <HomePageUser />
@@ -27,7 +29,7 @@ actions:
 <HomePageBBS />
 
 <script setup>
-import "@components/HomePageBanner.scss";
+import "@components/HomePage.scss";
 import HomePageUser from "@components/HomePageUser.vue";
 import HomePageDevelop from "@components/HomePageDevelop.vue";
 import HomePageBBS from "@components/HomePageBBS.vue";
