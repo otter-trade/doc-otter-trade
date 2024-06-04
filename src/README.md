@@ -22,4 +22,12 @@ actions:
     type: default
 ---
 
-<HomePage />
+<HomePageUser />
+<HomePageDevelop />
+<HomePageBBS />
+
+<script setup>
+import HomePageUser from "@components/HomePageUser.vue";
+import HomePageDevelop from "@components/HomePageDevelop.vue";
+import HomePageBBS from "@components/HomePageBBS.vue";
+</script>

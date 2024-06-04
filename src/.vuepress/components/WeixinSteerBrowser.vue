@@ -15,7 +15,7 @@ function UADevice() {
 
 function Start() {
   const device = UADevice();
-  if (!device.isWeixin) {
+  if (device.isWeixin) {
     isShow.value = true;
     showAnimate.value = false;
     setTimeout(() => {
