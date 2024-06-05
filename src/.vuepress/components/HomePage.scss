@@ -81,7 +81,6 @@
             margin: 0;
             margin-right: -1.5rem;
             width: 14.625rem;
-
             .icon {
               height: 2.5rem;
             }
@@ -103,14 +102,6 @@
     margin: 2rem auto;
     text-align: center;
     padding: 2rem 0;
-
-    &::after {
-      content: '';
-      width: 0;
-      height: 100%;
-      display: inline-block;
-      vertical-align: middle;
-    }
 
     .left,
     .right {

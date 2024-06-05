@@ -4,7 +4,7 @@
     <div class="left">
       <div class="info">
         <div class="title">BBS</div>
-        <div class="desc">“策略共鉴，智识流转。”</div>
+        <div class="desc">“牛策共鉴，智识流转。”</div>
         <div class="btnBlock">
           <a
             class="route-link auto-link vp-hero-action default no-external-link-icon mo7-home-btn-quick"
