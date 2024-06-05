@@ -37,7 +37,7 @@ export default hopeTheme({
     //..
   ],
 
-  logo: '/pwa/logo.png',
+  logo: '/pwa/512x512.png',
 
   docsDir: 'src',
 
