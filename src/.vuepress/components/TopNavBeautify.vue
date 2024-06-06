@@ -78,8 +78,7 @@ onMounted(() => {
   // 导航栏背景色
   .theme-container {
     .vp-navbar {
-      backdrop-filter: blur(6px);
-      background: rgba($color: #fff, $alpha: 0.6);
+      background: rgba($color: #fff, $alpha: 0.7);
     }
   }
 }
