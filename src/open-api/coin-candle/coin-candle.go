@@ -19,24 +19,23 @@ func main() {
 		ProxyURLs: []string{"http://127.0.0.1:10809"}, // 在拉取交易所数据时使用的代理池,没有代理则直接向交易所发起请求，国内可能会失败
 	})
 
-	// 启动本地数据的定时更新
+	// 启动一个定时器
 	m_cycle.New(m_cycle.Opt{
 		Func: func() {
-
 			exchange_api.UpdateLocalGoodsList() // 更新商品列表至本地
 			exchange_api.UpdateLocalTicker()    // 更新榜单数据至本地
 		},
 		SleepTime: time.Hour * 4, // 每4小时执行一次更新
 	}).Start()
 
-	// ####### 获取商品列表 #######
+	// ####### 获取商品列表的方法 #######
 	GoodsList, err := exchange_api.GetGoodsList()
 	if err != nil {
 		fmt.Println("获取商品列表失败", err)
 	}
 	fmt.Println("GoodsList 商品总数:", len(GoodsList))
 
-	// ####### 获取商品详情 #######
+	// ####### 获取单个商品的详情 #######
 	GoodsDetail, err := exchange_api.GetGoodsDetail(exchange_api.GetGoodsDetailOpt{
 		GoodsId: "BTC-USDT",
 	})
@@ -52,7 +51,9 @@ func main() {
 	}
 	fmt.Println("TickerList 今日上榜币种数量:", len(TickerList))
 
-	// ####### K线数据 #######
+	// ####### 任意时间点和任意币种的 K线数据获取 #######
+
+	var startTime = m_time.GetUnixInt64()
 	// time := m_time.TimeParse(m_time.LaySP_ss, "2023-05-06 18:56:43")
 	time := m_time.TimeParse(m_time.LaySP_ss, "2024-05-21 18:55:43")
 	// time := m_time.GetUnixInt64()
@@ -63,9 +64,13 @@ func main() {
 		Limit:    320,                        // 1-500 的正整数
 		Exchange: []string{"okx", "binance"}, // 需要请求的交易所， 目前只支持 okx 和 binance
 	})
+	var endTime = m_time.GetUnixInt64()
+	var diff = endTime - startTime
+	fmt.Println("diff:", diff)
 
 	if err != nil {
 		fmt.Println("获取K线数据失败", err)
 	}
 	fmt.Println("kline 总长度", len(klineMap["binance"]))
+
 }
