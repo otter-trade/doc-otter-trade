@@ -1,6 +1,9 @@
 import { hopeTheme } from 'vuepress-theme-hope';
 import { enNavbar, zhNavbar } from './navbar/index.js';
 import { enSidebar, zhSidebar } from './sidebar/index.js';
+import { getDirname, path } from 'vuepress/utils';
+
+const __dirname = getDirname(import.meta.url);
 
 export default hopeTheme({
   iconAssets: '//at.alicdn.com/t/c/font_4563845_1etsaa79eqc.css',
@@ -124,7 +127,14 @@ export default hopeTheme({
       figure: true,
       imgLazyload: true,
       imgSize: true,
-      include: true,
+      include: {
+        resolvePath: (file) => {
+          if (file.startsWith('@src')) {
+            return file.replace('@src', path.resolve(__dirname, '..'));
+          }
+          return file;
+        },
+      },
       mark: true,
       plantuml: true,
       spoiler: true,

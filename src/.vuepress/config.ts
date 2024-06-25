@@ -2,8 +2,7 @@ import { defineUserConfig } from 'vuepress';
 import theme from './theme.js';
 import { getDirname, path } from 'vuepress/utils';
 const __dirname = getDirname(import.meta.url);
-
-console.log('1111', __dirname); // 指向 .vuepress
+const SrcPath = path.resolve(__dirname, '../');
 
 export default defineUserConfig({
   dest: 'dist',
@@ -15,6 +14,7 @@ export default defineUserConfig({
 
   alias: {
     '@components': path.resolve(__dirname, 'components'),
+    '@src': SrcPath,
   },
 
   locales: {

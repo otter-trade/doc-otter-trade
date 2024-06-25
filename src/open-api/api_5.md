@@ -3,7 +3,7 @@ category:
   - OpenApi
 tag:
   - OpenApi
-# permalink: /get-started/step_1.html
+# permalink: /open-api/api_5.html
 ---
 
 # OpenApi 5
