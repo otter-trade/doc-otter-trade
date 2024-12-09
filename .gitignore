@@ -10,3 +10,4 @@ dist
 /data
 /logs
 go.sum
+pnpm-lock.yaml
