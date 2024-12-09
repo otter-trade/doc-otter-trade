@@ -2,7 +2,12 @@
 
 ## git 设置初始化
 function GitConfigInit() {
-  echo " 已覆盖 Git 设置 "
+  if [[ $(uname) == 'Darwin' || $(uname) == 'Linux' ]]; then
+    echo "修改文件权限"
+    chmod -R 777 ./
+    echo "Mac OS || Linux"
+  fi
+  echo "覆盖 Git 默认设置。"
   # 设置大小写敏感
   git config core.ignorecase false
   # 忽略文件权限的变更
@@ -15,8 +20,9 @@ function GitConfigInit() {
   git config --global core.safecrlf warn
   # init 默认分支设置为 main
   git config --global init.defaultBranch main
+  # 关闭分支显示分页 显示
+  git config --global pager.branch false
   # 修改文件权限为开放
-  chmod -R 777 ./
 }
 
 # 项目根目录

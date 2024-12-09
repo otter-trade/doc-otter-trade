@@ -9,8 +9,8 @@
     "build": "vuepress-vite build src",
     "clean-dev": "vuepress-vite dev src --clean-cache",
     "update-package": "pnpm dlx vp-update",
-    "sync": "./_shell/git-sync.sh",
-    "deploy": "./_shell/deploy.sh"
+    "sync": ".vscode/_shell/git-sync.sh",
+    "deploy": ".vscode/_shell/deploy.sh"
   },
   "devDependencies": {},
   "dependencies": {

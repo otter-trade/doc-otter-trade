@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ## 设置并加载变量
-source "./_shell/init.sh"
+# shellcheck disable=SC1091
+source "./.vscode/shell/init.sh"
 
 GitConfigInit
 
@@ -19,5 +20,4 @@ git pull &&
   git push &&
   echo "同步完成"
 
-GitConfigInit &&
-  exit 0
+exit 0

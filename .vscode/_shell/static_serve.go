@@ -5,8 +5,9 @@ import (
 	"net/http"
 )
 
+// 启动一个静态服务
 func main() {
-	prot := "9987"
+	prot := "9988"
 
 	HostPath := "0.0.0.0:" + prot
 
