@@ -20,6 +20,7 @@ const CheckScrollTopClass = () => {
 onMounted(() => {
   nextTick(() => {
     CheckScrollTopClass(); // 切换时顶栏修改
+
     window.removeEventListener('scroll', () => {});
     window.addEventListener('scroll', () => {
       CheckScrollTopClass();
@@ -27,7 +28,7 @@ onMounted(() => {
   });
 
   const router = useRouter();
-  router.beforeEach(() => {
+  router.afterEach(() => {
     nextTick(() => {
       setTimeout(() => {
         CheckScrollTopClass(); // 切换时顶栏修改
@@ -68,7 +69,7 @@ onMounted(() => {
 
 // 搜索框
 .theme-container {
-  .search-pro-button {
+  .slimsearch-button {
     border-color: var(--vp-tc);
   }
 }
