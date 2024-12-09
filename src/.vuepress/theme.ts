@@ -2,6 +2,10 @@ import { hopeTheme } from 'vuepress-theme-hope';
 import { enNavbar, zhNavbar } from './navbar/index.js';
 import { enSidebar, zhSidebar } from './sidebar/index.js';
 import { getDirname, path } from 'vuepress/utils';
+import AppPackage from '../../package.json';
+
+import manifest_json from './public/pwa/manifest.json';
+const manifestJson: any = manifest_json;
 
 const __dirname = getDirname(import.meta.url);
 
@@ -15,12 +19,13 @@ export default hopeTheme({
   },
   navbarTitle: 'OtterTrade',
   navbarAutoHide: 'always',
-  darkmode: 'disable',
+  darkmode: 'toggle',
+  contributors: true,
+  lastUpdated: true,
+  fullscreen: true,
+  license: AppPackage.license,
 
   hotReload: true,
-  favicon: '/favicon.ico',
-
-  // fullscreen: true,
 
   navbarLayout: {
     start: ['Brand'],
@@ -40,10 +45,8 @@ export default hopeTheme({
     //..
   ],
 
-  logo: '/pwa/512x512.png',
-
+  logo: '/pwa/192x192.png',
   docsDir: 'src',
-
   displayFooter: true,
 
   locales: {
@@ -69,179 +72,78 @@ export default hopeTheme({
     },
   },
 
+  markdown: {
+    include: {
+      resolvePath: (file) => {
+        if (file.startsWith('@src')) {
+          return file.replace('@src', path.resolve(__dirname, '..'));
+        }
+        return file;
+      },
+    },
+    stylize: [
+      {
+        matcher: 'Recommended',
+        replacer: ({ tag }) => {
+          if (tag === 'em')
+            return {
+              tag: 'Badge',
+              attrs: { type: 'tip' },
+              content: 'Recommended',
+            };
+        },
+      },
+    ],
+    align: true,
+    attrs: true,
+    alert: true,
+    tabs: true,
+    component: true,
+    spoiler: true,
+    demo: true,
+    echarts: true,
+    imgMark: true,
+    sub: true,
+    sup: true,
+    tasklist: true,
+    vPre: true,
+    breaks: true,
+    linkify: true,
+    footnote: true,
+    mark: true,
+    obsidianImgSize: true,
+  },
+
   plugins: {
+    photoSwipe: false, // 这个插件难用的 一 B
+
     comment: {
       provider: 'Waline',
       serverURL: 'https://talk.mo7.cc',
       copyright: false,
       reaction: true,
     },
-
-    searchPro: {
-      // 索引全部内容
-      indexContent: true,
-      autoSuggestions: true,
-      // 为分类和标签添加索引
-      customFields: [
-        {
-          getter(page: any) {
-            return page.frontmatter.category;
-          },
-          formatter: {
-            '/': '分类：$content',
-            '/en/': 'Category: $content',
-          },
-        },
-        {
-          getter(page: any) {
-            return page.frontmatter.tag;
-          },
-          formatter: {
-            '/': '标签：$content',
-            '/en/': 'Tag: $content',
-          },
-        },
-      ],
-    },
-
     feed: {
       atom: true,
       json: true,
       rss: true,
-      image: '/pwa/192x192.png',
-      icon: '/pwa/512x512.png',
+      image: '/pwa/72.png',
+      icon: '/pwa/512.png',
+    },
+    slimsearch: {
+      indexContent: true,
     },
 
-    // https://plugin-components.vuejs.press/zh/config.html
     components: {
       components: ['Badge', 'VPCard'],
     },
 
-    // All features are enabled for demo, only preserve features you need here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      codetabs: true,
-      component: true,
-      demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
-      include: {
-        resolvePath: (file) => {
-          if (file.startsWith('@src')) {
-            return file.replace('@src', path.resolve(__dirname, '..'));
-          }
-          return file;
-        },
-      },
-      mark: true,
-      plantuml: true,
-      spoiler: true,
-      stylize: [
-        {
-          matcher: 'Recommended',
-          replacer: ({ tag }) => {
-            if (tag === 'em')
-              return {
-                tag: 'Badge',
-                attrs: { type: 'tip' },
-                content: 'Recommended',
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-      alert: true,
-      footnote: true,
-      imgMark: true,
-      obsidianImgSize: true,
-
-      // Install chart.js before enabling it
-      // chart: true,
-
-      // insert component easily
-
-      // Install echarts before enabling it
-      // echarts: true,
-
-      // Install flowchart.ts before enabling it
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // Install katex before enabling it
-      // katex: true,
-
-      // Install mathjax-full before enabling it
-      // mathjax: true,
-
-      // Install mermaid before enabling it
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // Install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // Install @vue/repl before enabling it
-      // vuePlayground: true,
-
-      // Install sandpack-vue3 before enabling it
-      // sandpack: true,
-    },
-
-    // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
     pwa: {
       favicon: '/favicon.ico',
       cacheHTML: true,
       cacheImage: true,
       appendBase: true,
-      apple: {
-        icon: '/pwa/apple-touch-icon.png',
-        statusBarColor: 'black',
-      },
-      msTile: {
-        image: '/pwa/apple-touch-icon.png',
-        color: '#ffffff',
-      },
-      manifest: {
-        icons: [
-          {
-            src: '/pwa/512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: '/pwa/192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-        ],
-        shortcuts: [
-          {
-            name: 'OtterTrade文档站',
-            short_name: 'ot-doc',
-            url: '/',
-            icons: [
-              {
-                src: '/pwa/192x192.png',
-                sizes: '192x192',
-                type: 'image/png',
-              },
-            ],
-          },
-        ],
-      },
+      manifest: manifestJson,
     },
   },
 });

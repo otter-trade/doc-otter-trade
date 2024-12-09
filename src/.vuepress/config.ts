@@ -1,21 +1,22 @@
 import { defineUserConfig } from 'vuepress';
 import theme from './theme.js';
 import { getDirname, path } from 'vuepress/utils';
+
 const __dirname = getDirname(import.meta.url);
 const SrcPath = path.resolve(__dirname, '../');
 
 export default defineUserConfig({
-  dest: 'dist',
-  host: '0.0.0.0',
-  port: 9452,
-  base: '/',
-  temp: '.vscode/.vp-temp',
-  cache: '.vscode/.vp-cache',
-
   alias: {
     '@components': path.resolve(__dirname, 'components'),
     '@src': SrcPath,
   },
+
+  dest: 'dist',
+  host: '0.0.0.0',
+  port: 9451,
+  base: '/',
+  temp: '.cache/.vp-temp',
+  cache: '.cache/.vp-cache',
 
   locales: {
     '/': {
@@ -31,7 +32,6 @@ export default defineUserConfig({
   },
 
   theme,
-
   // Enable it with pwa
   shouldPrefetch: false,
 });

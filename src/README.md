@@ -20,7 +20,6 @@ actions:
     icon: /img/link_text.png
     link: https://OtterTrade.com
     type: default
-
 containerClass: mo7-home-page
 ---
 

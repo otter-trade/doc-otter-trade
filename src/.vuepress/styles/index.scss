@@ -21,21 +21,3 @@
 [aria-label][data-balloon-pos]:not([data-balloon-nofocus]):focus:after {
   opacity: 0.7;
 }
-
-.theme-container {
-  // 选中的 的顶部标签高亮
-  .vp-nav-links {
-    .route-link-active {
-      &::after {
-        inset: auto 0 0;
-        visibility: visible;
-      }
-    }
-  }
-
-  // 图标对齐
-  .font-icon {
-    display: inline-block;
-    vertical-align: baseline;
-  }
-}
