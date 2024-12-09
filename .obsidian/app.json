@@ -1,0 +1,33 @@
+{
+  "defaultViewMode": "preview",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "showLineNumber": true,
+  "useTab": false,
+  "tabSize": 2,
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    ".git/",
+    "dist/",
+    "node_modules/",
+    "_shell/",
+    ".trash",
+    ".vscode",
+    ".obsidian",
+    ".gitignore",
+    ".prettierignore",
+    ".prettierrc.cjs",
+    "package.json",
+    "tsconfig.json",
+    "go.mod",
+    "pnpm-lock.yaml"
+  ],
+  "showUnsupportedFiles": false,
+  "showRibbon": true,
+  "attachmentFolderPath": "assets"
+}
