@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0c73776df6a340c5",
+        "id": "da14e16354d4fe5f",
         "type": "tabs",
         "children": [
           {
-            "id": "af57035152b9eb3b",
+            "id": "76124a1c2dc1fb13",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "diary/2024-12-09_周一.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2024-12-09_周一"
+              "title": "新标签页"
             }
           }
         ]
@@ -179,7 +174,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "af57035152b9eb3b",
+  "active": "76124a1c2dc1fb13",
   "lastOpenFiles": [
     "dist/package.json",
     "dist/sitemap.xsl",
