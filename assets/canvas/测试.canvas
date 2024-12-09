@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"9203a02c3b2208a6","type":"text","text":"阿萨德","x":63,"y":129,"width":250,"height":60},
+		{"id":"2ba21ac63b4d0cba","type":"text","text":"阿萨德","x":63,"y":49,"width":250,"height":60},
+		{"id":"27a6f80a7c276ea3","type":"text","text":"阿是","x":63,"y":-31,"width":250,"height":60,"color":"6"},
+		{"id":"fb4c80e24a0c3e67","type":"text","text":"阿萨德","x":63,"y":-111,"width":250,"height":60,"color":"3"},
+		{"id":"c44d7b9595fcc12d","type":"text","text":"阿萨德","x":63,"y":-271,"width":250,"height":60},
+		{"id":"c6e844c26d31387a","type":"text","text":"阿萨德","x":63,"y":-351,"width":250,"height":60},
+		{"id":"a29150b4eba91b02","type":"text","text":"阿萨德","x":63,"y":-431,"width":250,"height":60},
+		{"id":"35c3a541328e2eb1","type":"text","text":"阿萨德","x":-387,"y":-151,"width":250,"height":60},
+		{"id":"fbd087867345e3b2","type":"text","text":"阿萨德","x":63,"y":-181,"width":250,"height":60},
+		{"id":"5718dd22962f6d3b","type":"text","text":"阿萨德\n","x":460,"y":-461,"width":250,"height":60},
+		{"id":"5b78254615a66679","type":"text","text":"123","x":460,"y":-351,"width":250,"height":60},
+		{"id":"8a42b9390adc359f","type":"text","text":"阿萨德","x":460,"y":-271,"width":250,"height":60},
+		{"id":"c345934217a2fa1b","type":"text","text":"阿萨德","x":460,"y":-181,"width":250,"height":60},
+		{"id":"e61802ec8ed39c6b","type":"text","text":"阿萨德","x":63,"y":220,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"-iNgjNZYQe84","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"a29150b4eba91b02","toSide":"left"},
+		{"id":"VsOgjNZjo7ql","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"c6e844c26d31387a","toSide":"left"},
+		{"id":"AQPgjNZFtLj4","fromNode":"c6e844c26d31387a","fromSide":"right","toNode":"5718dd22962f6d3b","toSide":"left"},
+		{"id":"jaSgjNZaaswr","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"c44d7b9595fcc12d","toSide":"left"},
+		{"id":"_6TgjNZZMcGo","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"fbd087867345e3b2","toSide":"left"},
+		{"id":"6tUgjNZAUXG0","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"fb4c80e24a0c3e67","toSide":"left"},
+		{"id":"XQVgjNZA78To","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"27a6f80a7c276ea3","toSide":"left"},
+		{"id":"ItVgjNZCPdYY","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"2ba21ac63b4d0cba","toSide":"left"},
+		{"id":"THXgjNZjUDxh","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"9203a02c3b2208a6","toSide":"left"},
+		{"id":"GwnpoNZXePuL","fromNode":"c6e844c26d31387a","fromSide":"right","toNode":"5b78254615a66679","toSide":"left"},
+		{"id":"04cc190fbd7787f0","fromNode":"c44d7b9595fcc12d","fromSide":"right","toNode":"8a42b9390adc359f","toSide":"left"},
+		{"id":"70b61ed9e021f4a4","fromNode":"fbd087867345e3b2","fromSide":"right","toNode":"c345934217a2fa1b","toSide":"left"},
+		{"id":"f16361c6686945bb","fromNode":"35c3a541328e2eb1","fromSide":"right","toNode":"e61802ec8ed39c6b","toSide":"left"}
+	]
+}
