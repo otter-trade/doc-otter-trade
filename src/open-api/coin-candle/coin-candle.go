@@ -11,7 +11,6 @@ import (
 )
 
 func main() {
-
 	// 初始化项目配置
 	global.SysInit(global.SysInitOpt{
 		LogPath:   "",                                 // 日志文件存放目录，缺省值：./logs
@@ -53,24 +52,23 @@ func main() {
 
 	// ####### 任意时间点和任意币种的 K线数据获取 #######
 
-	var startTime = m_time.GetUnixInt64()
+	startTime := m_time.GetUnixInt64()
 	// time := m_time.TimeParse(m_time.LaySP_ss, "2023-05-06 18:56:43")
 	time := m_time.TimeParse(m_time.LaySP_ss, "2024-05-21 18:55:43")
 	// time := m_time.GetUnixInt64()
 	klineMap, err := exchange_api.GetKline(global.GetKlineOpt{
 		GoodsId:  "BTC-USDT",
 		Bar:      "1m",                       // 允许值 1m  5m  15m  30m  1h
-		EndTime:  time,                       //13 位毫秒时间戳
+		EndTime:  time,                       // 13 位毫秒时间戳
 		Limit:    320,                        // 1-500 的正整数
 		Exchange: []string{"okx", "binance"}, // 需要请求的交易所， 目前只支持 okx 和 binance
 	})
-	var endTime = m_time.GetUnixInt64()
-	var diff = endTime - startTime
+	endTime := m_time.GetUnixInt64()
+	diff := endTime - startTime
 	fmt.Println("diff:", diff)
 
 	if err != nil {
 		fmt.Println("获取K线数据失败", err)
 	}
 	fmt.Println("kline 总长度", len(klineMap["binance"]))
-
 }

@@ -9,8 +9,10 @@
     "build": "vuepress-vite build src",
     "clean-dev": "vuepress-vite dev src --clean-cache",
     "update-package": "pnpm dlx vp-update",
-    "sync": ".vscode/_shell/git-sync.sh",
-    "deploy": ".vscode/_shell/deploy.sh"
+    "sync": "./.vscode/shell/git-sync.sh",
+    "deploy": "./.vscode/shell/deploy.sh",
+    "preview": "go run ./.vscode/shell/static_serve.go",
+    "clear-dir": "rm -rf .cache dist .trash go.sum node_modules pnpm-lock.yaml "
   },
   "devDependencies": {},
   "dependencies": {
