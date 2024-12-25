@@ -32,7 +32,7 @@ NowPath=$(pwd)
 OutPutPath="${NowPath}/dist"
 
 # 需要发布的远程仓库目录地址
-GitRemotePackagePath="git@github.com:otter-trade/otter-trade.github.io.git" # 待定
+GitRemotePackagePath="git@github.com:otter-trade/otter-trade.github.io.git"
 
 # Deploy 完成之后的输出  待定
 DeployEndText="
