@@ -2,20 +2,19 @@
   "name": "doc-otter-trade",
   "version": "1.0.4",
   "description": "OtterTrade 的文档站。",
-  "license": "None",
+  "license": "Apache-2.0",
   "type": "module",
   "scripts": {
     "dev": "vuepress-vite dev src",
     "build": "vuepress-vite build src",
     "clean-dev": "vuepress-vite dev src --clean-cache",
-    "update-package": "pnpm dlx vp-update",
-    "sync": "./.vscode/shell/git-sync.sh",
-    "deploy": "./.vscode/shell/deploy.sh",
-    "preview": "go run ./.vscode/shell/static_serve.go",
-    "clear-dir": "rm -rf .cache dist .trash go.sum node_modules pnpm-lock.yaml "
+    "update-package": "bun x vp-update",
+    "sync": "bash .vscode/shell/git-sync.sh",
+    "deploy": "bash .vscode/shell/deploy.sh",
+    "preview": "go run .vscode/shell/static_serve.go",
+    "clear-dir": "rm -rf .cache dist .trash node_modules pnpm-lock.yaml bun.lockb go.sum"
   },
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.18",
     "@vuepress/plugin-feed": "2.0.0-rc.65",
     "@vuepress/plugin-pwa": "2.0.0-rc.65",
