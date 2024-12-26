@@ -21,7 +21,7 @@ echo "git commit: ${desc}"
 rm -rf "${OutPutPath}"
 
 ## 开始编译
-pnpm run build &&
+bun run build &&
   cp "${NowPath}/package.json" "${OutPutPath}" &&
   echo "编译结束${OutPutPath}"
 
